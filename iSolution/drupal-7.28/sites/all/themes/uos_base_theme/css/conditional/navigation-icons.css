@@ -1,0 +1,61 @@
+/**
+ * It display home and back arrow icons and different colors for the main menu
+ * navigation.
+ *
+ * These styles are used when the "Show navigation icons" option from Omega
+ * theme is enabled.
+ */
+.left-sidebar .menu .first {
+  background-image: url("../../images/nav_house.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-color: #005baa;
+}
+.left-sidebar .menu .first:hover {
+  background-image: url("../../images/nav_house.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.left-sidebar .menu .last {
+  background-image: url("../../images/nav_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-color: #005baa;
+}
+.left-sidebar .menu .last:hover {
+  background-image: url("../../images/nav_arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.left-sidebar .menu li ul .first {
+  background-image: none;
+  background-color: #008eb0;
+}
+.left-sidebar .menu li ul .first:hover {
+  background-image: none;
+  background-color: #004680;
+}
+.left-sidebar .menu li ul .last {
+  background-image: none;
+  background-color: #008eb0;
+}
+.left-sidebar .menu li ul .last:hover {
+  background-image: none;
+  background-color: #004680;
+}
+.left-sidebar .menu li li ul .first {
+  background-image: none;
+  background-color: #008eb0;
+}
+.left-sidebar .menu li li ul .first:hover {
+  background-image: none;
+  background-color: #004680;
+}
+.left-sidebar .menu li li ul .last {
+  background-image: none;
+  background-color: #008eb0;
+}
+.left-sidebar .menu li li ul .last:hover {
+  background-image: none;
+  background-color: #004680;
+}

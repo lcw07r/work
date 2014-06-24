@@ -1,0 +1,33 @@
+website login detail:
+	u:lcw102;
+	p:lcw102;
+
+php info file: 
+	http://localhost/drupal-7.28/?q=admin/reports/status/php
+	C:\wamp\bin\apache\Apache2.2.17\bin\php.ini
+
+setting file:
+	C:\wamp\www\drupal-7.28\sites\default
+	
+database:
+	'database' => 'drupaluos',
+
+     	'username' => 'drupaluos',
+
+     	'password' => 'lcw102',
+
+     	'host' => 'localhost',
+
+     	'port' => '',
+      
+	'driver' => 'mysql',
+     
+	'prefix' => '',
+
+main pages for modify the uos_base_theme
+	defaul page layout: C:\wamp\www\work\iSolution\drupal-7.28\sites\all\themes\uos_base_theme\layouts\uos-off-canvas\uos-off-canvas-layout.tpl.php
+	mobile menu sections css: C:\wamp\www\work\iSolution\drupal-7.28\sites\all\themes\uos_base_theme\css\layouts\uos-off-canvas\uos-off-canvas.layout.css
+	css:	C:\wamp\www\work\iSolution\drupal-7.28\sites\all\themes\uos_base_theme\css\uos-base-theme.styles.css
+
+example website for using the uos_base_theme
+	http://www.llasdev.soton.ac.uk/d7/

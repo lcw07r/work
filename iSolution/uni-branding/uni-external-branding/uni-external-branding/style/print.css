@@ -1,0 +1,227 @@
+.canvas * {
+     color: #000000 ! important;
+     overflow: visible ! important;
+}
+
+.canvas #content {
+     font-size: 120%;
+}
+
+.canvas a {
+     border-bottom: 1px dotted;
+     text-decoration: none ! important;
+}
+
+div div#card1.card div.col1 div.row div.col1{
+width: 650px;
+}
+
+div div#card1.card div.col1 div.row div.col2{
+width: 650px;
+}
+
+
+.canvas #content a:after, .canvas .peripheralcontent a:after {
+     content: " (" attr(href) ") ";
+     display: none;
+     font-size: 80%;
+}
+
+.canvas #accessibility, .canvas #nav, .canvas #footer {
+     display: none ! important;
+}
+
+.canvas #header {
+     background: none repeat scroll 0pt 50% transparent ! important;
+     border: 0pt none ! important;
+     height: auto ! important;
+     min-height: 0pt ! important;
+}
+
+.canvas #header {
+     background: none repeat scroll 0pt 50% transparent ! important;
+     border: 0pt none ! important;
+     height: auto ! important;
+     min-height: 0pt ! important;
+}
+
+.canvas #heading {
+     border-bottom: medium none ! important;
+}
+
+.canvas #heading h2 {
+     font-size: 2.8em;
+     margin-left: 10px;
+}
+
+.canvas #blurbLink {
+     color: #000000 ! important;
+     float: none ! important;
+     margin: 0pt ! important;
+}
+
+.canvas #blurbLink a {
+     color: #000000 ! important;
+}
+
+.canvas #blurbLink a:after {
+     content: " (" attr(href) ") ";
+}
+
+.canvas #logo {
+     background: url("/images/bg_logo_small.png") no-repeat scroll right 50% transparent ! important;
+     display: none;
+     float: none ! important;
+     height: 93px ! important;
+     margin: 0pt;
+     width: 100%;
+}
+
+.canvas #blurb {
+     background: none repeat scroll 0pt 50% transparent ! important;
+     display: block ! important;
+     float: none ! important;
+     height: auto ! important;
+     text-indent: 0pt ! important;
+     width: 100% ! important;
+}
+
+.canvas #summary {
+     background: none repeat scroll 0pt 50% transparent ! important;
+     color: #000000 ! important;
+     margin-top: 1em ! important;
+     padding: 0pt ! important;
+}
+
+.canvas #breadcrumb {
+     border-bottom: medium none ! important;
+     margin: 1em 1em 1em 0em ! important;
+}
+
+.canvas #breadcrumb * {
+     color: #999999 ! important;
+}
+
+.canvas #container h2 {
+     color: #000000 ! important;
+     margin-left: 0pt ! important;
+     width: 100%;
+}
+
+.canvas #content, .canvas .peripheralcontent {
+     clear: both;
+     float: none ! important;
+     height: auto ! important;
+     overflow: visible ! important;
+     padding-left: 0pt ! important;
+     width: auto ! important;
+}
+
+.canvas #content * {
+     color: #000000 ! important;
+}
+
+.canvas #content .image p {
+     color: #FFFFFF ! important;
+}
+
+.canvas #subcontent {
+     border-top: 1px dashed #CCCCCC ! important;
+     padding: 1em 0pt 0pt ! important;
+}
+
+.canvas #subcontent * {
+     background: none repeat scroll 0pt 50% transparent ! important;
+     color: #999999 ! important;
+     font-size: 1em ! important;
+}
+
+.canvas #subcontent .image .captionContainer p {
+     background: none repeat scroll 0% 0% #333333 ! important;
+     color: #FFFFFF ! important;
+}
+
+.canvas div.image .moreContainer {
+     display: none;
+}
+
+.canvas #container {
+     display: inline;
+}
+
+.canvas div.card, .canvas div.card ul {
+     overflow: hidden !important;
+}
+
+.canvas div.card {
+     border: 1px solid #333333 ! important;
+     display: block ! important;
+     margin: 10px ! important;
+     padding: 10px ! important;
+     width: 890px ! important;
+}
+
+.canvas div.card.row {
+     float: left ! important;
+}
+
+.canvas ul.tabs {
+     display: none ! important;
+}
+
+.canvas div.card div.row h3 {
+     padding: 8px 0px;
+}
+
+.canvas div.card div.row h4 {
+     padding: 8px 0px;
+}
+
+.canvas div.card div.row h5 {
+     padding: 8px 0px;
+}
+
+.canvas div.card div.row {
+     margin-bottom: 5px ! important;
+}
+
+.canvas div.card div.row div.col1 {
+     float: left;
+     width: 860px;
+}
+
+.canvas div.card div.row div.col2 {
+     float: left;
+     width: 860px;
+}
+
+.canvas div.card div.row ul.facts {
+     list-style: none outside none ! important;
+}
+
+.canvas div.card ul.listing li.alt {
+     background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.canvas div.card div.col1 {
+     float: left;
+     width: 630px;
+}
+
+.canvas div.card div.col2 {
+     float: right;
+     margin: 0px;
+     width: 200px;
+}
+
+.canvas div.card div.row ul.facts {
+     list-style: none outside none ! important;
+}
+
+.canvas .right_border {
+     border-right: medium none ! important;
+}
+
+.canvas div.card h3.tabtitle {
+  display: block !important;
+}

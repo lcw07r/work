@@ -1,0 +1,87 @@
+name = UoS Base Theme
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/uos-base-theme.normalize.css
+stylesheets[all][] = css/uos-base-theme.hacks.css
+stylesheets[all][] = css/uos-base-theme.styles.css
+stylesheets[all][] = css/uos-base-theme.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/uos-base-theme.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[accessibility] = Accessibility
+regions[branding] = Branding
+regions[branding-subarea-1] = Branding Sub Area 1
+regions[branding-subarea-2] = Branding Sub Area 2
+regions[branding-subarea-3] = Branding Sub Area 3
+regions[header] = Header
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left Sidebar
+regions[sidebar_second] = Right Sidebar
+regions[footer] = Footer
+
+; ========================================
+; Settings
+; ========================================
+settings[toggle_logo] = 1
+settings[toggle_name] = 1
+settings[toggle_slogan] = 1
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 1
+settings[omega_toggle_front_page_content] = 1
+settings[omega_toggle_breadcrumbs] = 0
+settings[omega_toggle_navigation_css] = 0
+settings[omega_toggle_logo_position] = 1
+settings[default_logo] = 0
+settings[logo_path] = sites/all/themes/uos_base_theme/images/routes-logo-square.png
+settings[logo_upload] = ""
+settings[default_favicon] = 0
+settings[favicon_path] = sites/all/themes/uos_base_theme/images/routes-favicon.ico
+settings[favicon_upload] = ""
+settings[omega_enable_warning] = 1
+settings[omega_toggle_extension_layouts] = 1
+settings[omega_layout] = uos-off-canvas
+settings[omega_toggle_extension_development] = 1
+settings[omega_rebuild_theme_registry] = 1
+settings[omega_rebuild_aggregates] = 1
+settings[omega_browser_width_indicator] = 0
+settings[omega_livereload] = 0
+settings[omega_livereload_script] = http://localhost:35729/livereload.js
+settings[omega_livereload_host] = localhost/d7
+settings[omega_livereload_port] = 35729
+settings[omega_demo_regions] = 0
+settings[omega_toggle_extension_compatibility] = 1
+settings[omega_conditional_classes_html] = 1
+settings[omega_apple_touch] = 0
+settings[omega_cleartype] = 0
+settings[omega_handheld_friendly] = 0
+settings[omega_mobile_optimized] = 0
+settings[omega_viewport] = 0
+settings[omega_viewport_user_scaleable] = 1
+settings[omega_chrome_edge] = 0
+settings[omega_internet_explorer_support] = 6
+settings[omega_chrome_popup] = 1
+settings[omega_chrome_notice] = 1
+settings[omega_toggle_extension_assets] = 1
+settings[omega_libraries][selectivizr][status] = 0
+settings[omega_libraries][respond][status] = 1
+settings[omega_libraries][pie][status] = 0
+settings[omega_libraries][html5shiv][status] = 0
+settings[favicon_mimetype] = image/vnd.microsoft.icon

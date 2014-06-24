@@ -1,0 +1,7 @@
+/**
+ * Fix block--search padding (padding was added to the total width and the
+ * search was wider than it suppose to be)
+ */
+.lt-ie8 .block--search .form-text {
+  padding: 0 0 0 0;
+}

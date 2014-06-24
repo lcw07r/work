@@ -1,0 +1,48 @@
+.qp_wrapper {
+  font-size: 1.2em;
+  padding: 4px;
+  text-align: center;
+  clear: both;
+}
+
+.qp_counter {
+  margin:  10px;
+  display: none;
+}
+.qp_disabled {
+	color: #888;
+	display: none !important;
+}
+
+.qp_wrapper {
+	margin-bottom: 10px;
+	overflow: hidden;
+	height: 24px;
+}
+.qp_wrapper a {
+	display: inline;
+	float: left;
+	height: 24px;
+	text-indent: -1000em;
+	width: 24px;
+	cursor: pointer;
+	outline: 0;
+} 
+.qp_wrapper a.qp_prev {
+	background: url(../images/flickr_arrow.gif) no-repeat 0;
+  margin-left: 55px;
+}
+.qp_wrapper a.qp_next {
+	background: url(../images/flickr_arrow.gif) no-repeat -24px 0;
+	float: right;
+  margin-right: 55px;
+}
+
+.qp_prev {
+    /*margin-right: 30px;*/
+	/*display: block;*/
+}
+
+.qp_next {
+	/*display: block;*/
+}

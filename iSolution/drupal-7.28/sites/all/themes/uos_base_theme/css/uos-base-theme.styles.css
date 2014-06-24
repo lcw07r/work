@@ -1,0 +1,682 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* No files to import found in abstractions/**\/* */
+img, media {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.logo {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.logo img {
+  width: 170px;
+}
+
+body {
+  font: 100% Georgia, sans-serif, serif;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #014359;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+/**
+ * Headers
+ */
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+/**
+ * Moto or slogan of the site
+ */
+.site-slogan {
+  color: #cccccc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/**
+ * Drupal message system (displays warnings and errors)
+ */
+.messages a {
+  text-decoration: underline;
+}
+
+.left-sidebar, .right-sidebar {
+  font-size: 0.9em;
+}
+.left-sidebar h2, .right-sidebar h2 {
+  margin-bottom: 0.5em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+}
+.left-sidebar h3, .right-sidebar h3 {
+  font-size: 1em;
+}
+
+.main-container .node {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+.main-container .node h3 a {
+  color: #014359;
+}
+.main-container .node p {
+  padding-bottom: 1em;
+}
+.main-container .node ol, .main-container .node ul {
+  padding-left: 2em;
+}
+.main-container .node ul li {
+  list-style: disc;
+}
+.main-container .node ol li {
+  list-style: armenian;
+}
+
+/**
+ * The first link in Drupal is for accessibility, use to jump to main content
+ */
+body > a:focus {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #555555;
+  display: block;
+  padding: 0.5em;
+}
+
+/**
+ * General block styling
+ */
+.left-sidebar .block, .right-sidebar .block, .main-container .block {
+  background-color: #f0f0f0;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.left-sidebar .block .views-row, .right-sidebar .block .views-row, .main-container .block .views-row {
+  margin-bottom: 0.2em;
+}
+.left-sidebar .block h2, .left-sidebar .block h3, .right-sidebar .block h2, .right-sidebar .block h3, .main-container .block h2, .main-container .block h3 {
+  color: #666666;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+}
+.left-sidebar .block h2:hover, .left-sidebar .block h3:hover, .right-sidebar .block h2:hover, .right-sidebar .block h3:hover, .main-container .block h2:hover, .main-container .block h3:hover {
+  border-bottom-color: #666666;
+}
+.left-sidebar .block h2 a, .left-sidebar .block h3 a, .right-sidebar .block h2 a, .right-sidebar .block h3 a, .main-container .block h2 a, .main-container .block h3 a {
+  display: block;
+  color: #666666;
+}
+.left-sidebar .block h2 a:hover, .left-sidebar .block h3 a:hover, .right-sidebar .block h2 a:hover, .right-sidebar .block h3 a:hover, .main-container .block h2 a:hover, .main-container .block h3 a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Language selector block
+ */
+.block--locale li a {
+  height: 15px;
+  display: block;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-image: url("../images/flags.png");
+  margin-bottom: 5px;
+}
+.block--locale li a.active {
+  color: #014359;
+  text-decoration: underline;
+}
+.block--locale .en a {
+  background-position: left 100%;
+}
+.block--locale .cy a {
+  background-position: left 0%;
+}
+
+/**
+ * Latest news block
+ */
+.latest-news .view-news-block-list .views-row {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+.latest-news .view-news-block-list .views-row:hover {
+  background: none;
+}
+.latest-news .view-news-block-list .pager {
+  text-align: right;
+  margin: 0;
+}
+.latest-news .view-news-block-list .pager li {
+  display: inline;
+}
+
+/**
+ * Region map block
+ */
+.region-map .map-img {
+  margin-top: 1em;
+}
+
+/**
+ * Search block
+ */
+.block--search {
+  margin-bottom: 1em;
+}
+.block--search .form-text {
+  height: 2em;
+  padding: 0 25px 0 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  background-color: white;
+  background-image: url(../images/search-white.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #666666;
+}
+.block--search .form-text:focus {
+  -webkit-box-shadow: #cccccc 0 0 5px;
+  -moz-box-shadow: #cccccc 0 0 5px;
+  box-shadow: #cccccc 0 0 5px;
+}
+.block--search .form-actions {
+  display: none;
+}
+
+/**
+ * Main slider block
+ */
+.block--views-slider-block {
+  z-index: 0;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+.block--views-slider-block img {
+  height: 400px;
+  max-width: none;
+  width: auto !important;
+  z-index: 2;
+}
+.block--views-slider-block h2 {
+  display: none;
+}
+.block--views-slider-block .flexslider {
+  background: none;
+  border: none;
+  -webkit-box-shadow: white 0 0 0;
+  -moz-box-shadow: white 0 0 0;
+  box-shadow: white 0 0 0;
+  margin: 0;
+  padding: 0;
+}
+.block--views-slider-block .flexslider .slides {
+  position: relative;
+  overflow: hidden;
+}
+.block--views-slider-block .flexslider .flex-control-nav {
+  bottom: 0;
+  text-align: right;
+  z-index: 2;
+  padding: 5px;
+}
+.block--views-slider-block .flexslider .flex-control-nav a, .block--views-slider-block .flexslider .flex-control-nav a:hover, .block--views-slider-block .flexslider .flex-control-nav a:active {
+  border: none;
+  text-align: center;
+  -webkit-box-shadow: white 0 0 0;
+  -moz-box-shadow: white 0 0 0;
+  box-shadow: white 0 0 0;
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 3;
+  display: inline;
+  padding: 2px 14px;
+}
+.block--views-slider-block .flexslider .flex-control-nav a.flex-active {
+  background: #c0c0c0;
+}
+
+/**
+ * Flickr styling
+ */
+.flickr-photoset {
+  background-color: #f0f0f0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.flickr-photoset .flickr-wrap {
+  padding: 5px;
+}
+.flickr-photoset .flickr-wrap .flickr-credit {
+  display: none;
+}
+.flickr-photoset .flickr-credit {
+  display: none;
+}
+
+.flickr-photoset-meta {
+  display: none;
+}
+
+/**
+ * Maintenance page styling
+ */
+.maintenance-page {
+  background-color: #ffffff;
+  text-align: center;
+}
+.maintenance-page h1 {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.maintenance-page h2 {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+/**
+ * Style for the button that displays the left-sidebar on mobile-view
+ */
+.menu-btn {
+  float: left;
+  margin-top: 6em;
+}
+.menu-btn a {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-image: url("../layouts/uos-off-canvas/assets/menu_icon.png");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  padding-top: 0.8em;
+  padding-right: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 2.5em;
+}
+
+/**
+ * Breadcrumb
+ */
+.breadcrumb {
+  background: none;
+  padding-bottom: 2em;
+  display: inline;
+}
+.breadcrumb li {
+  float: left;
+  padding: 0 5px;
+}
+.breadcrumb a {
+  color: #333333;
+  text-decoration: none;
+}
+.breadcrumb li::after{
+  content:" | ";
+}
+
+/**
+ * Tab menu
+ */
+.tabs {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #0A96A9;
+}
+.tabs li {
+  margin-right: 0.2em;
+}
+.tabs a {
+  color: white;
+  background-color: #0A96A9;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -ms-border-radius: 10px 0 0 0;
+  -o-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+}
+.tabs a:hover {
+  background-color: #014359;
+  text-decoration: none;
+}
+.tabs a.active {
+  background-color: #a3bbd7;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -ms-border-radius: 10px 0 0 0;
+  -o-border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
+}
+.tabs a.active:hover {
+  background-color: #014359;
+}
+
+/**
+ * Main menu
+ */
+.left-sidebar .block--menu {
+  background: none;
+  padding: 0;
+}
+.left-sidebar .menu {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #0A96A9;
+}
+.left-sidebar .menu a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+.left-sidebar .menu li {
+  list-style: none;
+  list-style-image: none;
+  list-style-position: inside;
+}
+.left-sidebar .menu li:hover {
+  background-color: #014359;
+}
+.left-sidebar .menu li li a {
+  padding: 0.5em 2em;
+  font-size: 1em;
+}
+.left-sidebar .menu li li li a {
+  padding: 0.5em 3em;
+  font-size: 0.9em;
+}
+.left-sidebar .menu .expanded {
+  background-color: #014359;
+}
+.left-sidebar .menu .expanded > a {
+  border-bottom-width: 3px;
+}
+.left-sidebar .menu .active-trail {
+  background-color: #014359;
+}
+
+/**
+ * Fix form menu for IE 8 and below fix (they can't render properties at nav)
+ */
+.lt-ie9 .left-sidebar .menu {
+  margin-bottom: 1em;
+}
+
+/**
+ * Accessibility & Footer menu
+ */
+.accessibility .menu {
+  padding: 0.3em;
+}
+.accessibility .menu li {
+  display: inline;
+  list-style: none;
+  list-style-image: none;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #333333;
+}
+.accessibility .menu li a {
+  text-decoration: none;
+  margin: 0 0.4em;
+  font-size: 0.7em;
+  color: #333333;
+  font-family: verdana, sans-serif, serif;
+}
+.accessibility .menu li.last {
+  border: none;
+}
+
+.footer .menu {
+  text-align: center;
+  padding: 0.3em;
+}
+.footer .menu li {
+  display: inline;
+  list-style: none;
+  list-style-image: none;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #00aeef;
+}
+.footer .menu li a {
+  text-decoration: none;
+  margin: 0 0.4em;
+  font-size: 0.7em;
+  color: #f0f0f0;
+  font-family: verdana, sans-serif, serif;
+}
+.footer .menu li.last {
+  border: none;
+}
+
+/**
+ * Views styling
+ */
+.main-container .view-filters {
+  background-color: #f0f0f0;
+  padding: 0.5em;
+}
+.main-container .views-row {
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.main-container .views-row .photo {
+  float: left;
+  margin-right: 1em;
+}
+.main-container .views-row:hover {
+  background-color: #f0f0f0;
+}
+.main-container .pager {
+  font-family: serif, sans-serif, serif;
+  padding-top: 1em;
+}
+.main-container .pager li {
+  padding: 0.3em;
+}
+.main-container .view-footer {
+  text-align: center;
+  font-family: serif, sans-serif, serif;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+.container {
+  background-color: white;
+}
+
+.footer-container {
+  background-color: #cccccc;
+}
+
+.accessibility {
+  background-color: #cccccc;
+}
+
+.branding .menu-btn a {
+  color: white;
+  background-color: #005baa;
+}
+
+.header {
+  background-color: white;
+}
+
+.header-front {
+  background-color: #014359;
+}
+
+.header-title {
+  background-color: #ffffff;
+}
+
+.left-sidebar {
+  background-color: white;
+}
+
+.footer {
+  height: auto !important;
+  background: -webkit-linear-gradient(#0A96A9, #55c1d0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0A96A9, #55c1d0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0A96A9, #55c1d0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0A96A9, #55c1d0); /* Standard syntax (must be last) */
+}
+
+/**
+ * Fix the horizontal scroll-bar with ie7 (caused be slider)
+ */
+html {
+  overflow-x: hidden;
+}
+
+.pluginButtonContainer {
+  width: 50px !important;
+}
+
+.main-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.main-container .node__content .field {
+  padding-bottom: 1em;
+}
+
+/**
+ * site over write
+ */
+.left-sidebar .block, .right-sidebar .block, .main-container .block {
+  background: -webkit-linear-gradient(#a3bbd7, #ccdaea); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a3bbd7, #ccdaea); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a3bbd7, #ccdaea); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a3bbd7, #ccdaea); /* Standard syntax (must be last) */
+}
+
+.left-sidebar #block-search-form {
+  margin-bottom: 4px;
+}
+
+.left-sidebar {
+  margin-top: -3.2em !important;
+}
+
+.branding-subarea-3 {
+  /*  background: url("../images/uos_logo_small.png") no-repeat scroll center center rgba(0, 0, 0, 0);*/
+  margin-top: -6em !important;
+}
+
+
+
+#block-system-main-menu > ul.menu > li.first, #block-system-main-menu > ul.menu >li.last{
+  background-color: #a3bbd7;  /*  a3bbd7 is the darker one of the uni primary color CCDAEA */
+}
+
+
+.header-title h1 {
+  padding-left: 0 !important;
+}
+
+

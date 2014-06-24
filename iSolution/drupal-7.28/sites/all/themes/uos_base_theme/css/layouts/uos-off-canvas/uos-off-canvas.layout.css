@@ -1,0 +1,780 @@
+/**
+ * This files contain all the layout styles for the off-canvas
+ * For any other configuration like paddings margins add them to
+ * _layout-style.scss
+ *
+ * It uses the Susy One framework.
+ * Documentation: http://susydocs.oddbird.net/en/latest/susyone/
+ */
+html, body {
+  height: 100%;
+}
+
+.container {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -140px;
+}
+.container .container-footer-overflow {
+  height: 140px;
+}
+
+.footer-container {
+  clear: both;
+  position: relative;
+  height: 140px;
+}
+
+/**
+ * Establish the outer grid-containing element.
+ */
+.container {
+  *zoom: 1;
+  max-width: 34em;
+  _width: 34em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 50.5em) {
+  .container {
+    max-width: 50.5em;
+  }
+}
+@media (min-width: 61.5em) {
+  .container {
+    max-width: 61.5em;
+  }
+}
+@media (min-width: 89em) {
+  .container {
+    max-width: 89em;
+  }
+}
+
+/**
+ * Region: Accessibility
+ * Use: accessibility-menu
+ * Info: No other use except "block--menu-menu-accessibility-menu"
+ */
+.accessibility {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1em;
+  padding-left: 1em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+/**
+ * Region: Branding
+ * Use: normally no content will be assigned directly here, but in sub-areas
+ */
+.branding {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1em;
+  padding-left: 1em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+/**
+ * Region: Branding Sub-Areas
+ * Use: logo, search, site slogan, etc
+ */
+.branding .branding-subarea-1 {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-1 {
+    width: 31.95876%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .branding-subarea-1 {
+    width: 26.05042%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .branding .branding-subarea-1 {
+    width: 17.81609%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}
+.branding .branding-subarea-2 {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-2 {
+    width: 65.97938%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .branding-subarea-2 {
+    width: 44.53782%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .branding .branding-subarea-2 {
+    width: 49.42529%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}
+.branding .branding-subarea-3 {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-3 {
+    width: 65.97938%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .branding-subarea-3 {
+    width: 26.05042%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 89em) {
+  .branding .branding-subarea-3 {
+    width: 30.45977%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/**
+ * Branding Sub-Area: any block type
+ * Info: Configure all the blocks in this area to be full-width
+ *       Feel free to edit
+ */
+.branding .block {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .block {
+    width: 100%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .block {
+    width: 100%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .branding .block {
+    width: 100%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}
+
+/**
+ * Branding Sub-Area: Logo
+ * Info: The logo position is determined on the standards of UoS
+ */
+.branding .logo-left {
+  width: 48.4375%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .logo-left {
+    width: 100%;
+    float: left;
+    margin-right: 6.45161%;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .logo-left {
+    width: 100%;
+    float: left;
+    margin-right: 6.45161%;
+  }
+}
+@media (min-width: 89em) {
+  .branding .logo-left {
+    width: 100%;
+    float: left;
+    margin-right: 6.45161%;
+  }
+}
+.branding .logo-right {
+  width: 48.4375%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .branding .logo-right {
+    width: 31.95876%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .logo-right {
+    width: 100%;
+    float: left;
+    margin-right: 6.45161%;
+  }
+}
+@media (min-width: 89em) {
+  .branding .logo-right {
+    width: 65.625%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/*
+ * Region: Header
+ * Use: slidebar (the scrolling banner, or a plain image, or a plain background)
+ *      to add the slider only on the front page there are two options:
+ *      1. Add th block from Blocks->View: Slider and in the configure->
+ *         Pages->Only the listed pages: <front>
+ *      2. Or programmatically in the layout->layout-name.tpl.php add the region
+ *         render inside <?php if (drupal_is_front_page()): ?>
+ */
+.header {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1em;
+  padding-left: 1em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+@media (min-width: 50.5em) {
+  .header {
+    width: 100%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+}
+@media (min-width: 61.5em) {
+  .header {
+    width: 100%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .header {
+    width: 100%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+  .header .block {
+    padding-left: 18.96552%;
+  }
+}
+
+/**
+ * Region: Header Title
+ * Use: site-name, title
+ * Info: No blocks can be assigned to this region
+ * Warning: No actual region, just a div
+ */
+.header-title {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1em;
+  padding-left: 1em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+@media (min-width: 50.5em) {
+  .header-title {
+    width: 100%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+  .header-title h1 {
+    padding-left: 34.02062%;
+  }
+}
+@media (min-width: 61.5em) {
+  .header-title {
+    width: 100%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+  .header-title h1 {
+    padding-left: 27.73109%;
+  }
+}
+@media (min-width: 89em) {
+  .header-title {
+    width: 100%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+  .header-title h1 {
+    padding-left: 18.96552%;
+  }
+}
+
+/**
+ * Region: Left Sidebar
+ * Use: main-menu-block (or whatever the main navigation system is)
+ * Info: You can add extra blocks after it (like: share this page, etc.)
+ */
+.left-sidebar {
+  width: 82.8125%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .left-sidebar {
+    width: 31.95876%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+}
+@media (min-width: 61.5em) {
+  .left-sidebar {
+    width: 26.05042%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .left-sidebar {
+    width: 17.81609%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}
+
+/**
+ * Region: Content
+ * Use: main content is rendered here
+ * Info: Usually no other blocks assigned.
+ */
+.main-container {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .main-container {
+    width: 65.97938%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .main-container {
+    width: 53.78151%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .main-container {
+    width: 62.06897%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}
+
+/**
+ * Sub-regions of the main-container.
+ */
+.main-container .ag6 {
+  width: 48.4375%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .main-container .ag6 {
+    width: 48.4375%;
+    float: left;
+    margin-right: 3.125%;
+  }
+}
+@media (min-width: 61.5em) {
+  .main-container .ag6 {
+    width: 48.4375%;
+    float: left;
+    margin-right: 3.125%;
+  }
+}
+@media (min-width: 89em) {
+  .main-container .ag6 {
+    width: 49.07407%;
+    float: left;
+    margin-right: 1.85185%;
+  }
+}
+.main-container .ag7 {
+  width: 48.4375%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .main-container .ag7 {
+    width: 48.4375%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .main-container .ag7 {
+    width: 48.4375%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 89em) {
+  .main-container .ag7 {
+    width: 49.07407%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/**
+ * Region: Right Sidebar
+ * Use: Variety of blocks, like: "related-download", "snippets",
+ *      "related-links", "twitter", etc.
+ */
+.right-sidebar {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .right-sidebar {
+    width: 65.97938%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 61.5em) {
+  .right-sidebar {
+    width: 16.80672%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 89em) {
+  .right-sidebar {
+    width: 17.81609%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/**
+ * This div adds extra height to container, so it will not overlap with the
+ * sticky footer.
+ */
+.container-footer-overflow {
+  clear: both;
+}
+
+/**
+ * Footer container is a container for footer. There is no other use except to
+ * make the footer sticky at the bottom of the page.
+ */
+.footer-container {
+  *zoom: 1;
+  max-width: 34em;
+  _width: 34em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 50.5em) {
+  .footer-container {
+    max-width: 50.5em;
+  }
+}
+@media (min-width: 61.5em) {
+  .footer-container {
+    max-width: 61.5em;
+  }
+}
+@media (min-width: 89em) {
+  .footer-container {
+    max-width: 89em;
+  }
+}
+
+/**
+ * Region: Footer
+ * Use: footer-menu
+ */
+.footer {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-left: -1em;
+  padding-left: 1em;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+/**
+ * Never add margin and paddings directly to an area that is controlled by Susy.
+ * Except you are know what you are doing or Susy overrides (like off-canvas)
+ *
+ * Style that are here are a part of the layout and usually contain media
+ * queries (if not, consider to put them in the proper file)
+ */
+/**
+ * Off-canvas must not trigger horizontal scroll-bar
+ */
+.container {
+  overflow: hidden;
+}
+
+/**
+ * The button that displays the left-sidebar, visible only in mobile view
+ */
+@media (min-width: 50.5em) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+/**
+ * Change paddings for Branding Sub-areas
+ */
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-1.branding-subarea-1-not-front {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-2 {
+    padding-top: 3em;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .branding-subarea-2 {
+    padding-top: 7em;
+  }
+}
+@media (min-width: 50.5em) {
+  .branding .branding-subarea-3 {
+    padding-top: 2em;
+  }
+}
+@media (min-width: 61.5em) {
+  .branding .branding-subarea-3 {
+    padding-top: 7.5em;
+  }
+}
+
+/**
+ * When there is no content in the header (namely the main-slider), display a
+ * small line with the main color of the theme.
+ */
+.header {
+  display: none;
+}
+@media (min-width: 50.5em) {
+  .header {
+    min-height: 3px;
+    display: block;
+  }
+}
+.header .header-front {
+  margin-top: 1em;
+  height: 1px;
+}
+
+/**
+ * Add margins for the header title, and change them for non mobile view
+ */
+.header-title h1 {
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+@media (min-width: 50.5em) {
+  .header-title h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/**
+ * Make the left-sidebar off-canvas. Also move it upwards.
+ */
+.left-sidebar {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  margin-left: -100%;
+}
+.show-left-sidebar .left-sidebar {
+  margin-left: 0;
+}
+@media (min-width: 50.5em) {
+  .left-sidebar {
+    margin-top: -8.5em;
+    margin-left: 0;
+  }
+}
+
+/**
+ * Make the main-container to respond the off-canvas
+ */
+.main-container {
+  margin-right: -100%;
+}
+@media (min-width: 50.5em) {
+  .main-container {
+    margin-right: 0;
+  }
+}
+
+.right-sidebar {
+  margin-top: 1em;
+  clear: both;
+  overflow: hidden;
+}
+@media (min-width: 50.5em) {
+  .right-sidebar {
+    clear: none;
+  }
+  .right-sidebar .block a {
+    text-decoration: none;
+  }
+  .right-sidebar .block a:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Fix footer height, needed for sticky footer.
+ */
+.footer {
+  height: 140px;
+}
+.footer .footer-logo {
+  margin-top: 1em;
+  height: 90px;
+  background: url("../../../images/footer-logo.png") center no-repeat;
+}
+
+/**
+ * Fix the problem with ie7 on mobile, disabling off-canvas.
+ */
+.lt-ie8 .menu-btn {
+  display: none;
+}
+.lt-ie8 .left-sidebar {
+  margin-left: 0;
+}
+.lt-ie8 .main-container {
+  margin-right: 0;
+}
+.lt-ie8 .left-sidebar {
+  width: 100%;
+  float: left;
+  margin-right: 3.125%;
+  display: inline;
+}
+@media (min-width: 50.5em) {
+  .lt-ie8 .left-sidebar {
+    width: 31.95876%;
+    float: left;
+    margin-right: 2.06186%;
+  }
+}
+@media (min-width: 61.5em) {
+  .lt-ie8 .left-sidebar {
+    width: 26.05042%;
+    float: left;
+    margin-right: 1.68067%;
+  }
+}
+@media (min-width: 89em) {
+  .lt-ie8 .left-sidebar {
+    width: 17.81609%;
+    float: left;
+    margin-right: 1.14943%;
+  }
+}

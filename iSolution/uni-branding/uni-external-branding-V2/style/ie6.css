@@ -1,0 +1,89 @@
+/**
+* IE6 specific settings
+*
+* This file can contain any hacks needed to get the styles working with IE6..
+*
+*/
+.browserIE6 #container,
+.browserIE6 #content,
+.browserIE6 #accessibility,
+.browserIE6 div.news,
+.browserIE6 ul#breadcrumb,
+.browserIE6 div.image,
+.browserIE6 div.card,
+.browserIE6 div.row,
+.browserIE6 div.listing,
+.browserIE6 div.intro,
+.browserIE6 li.staff_list_item,
+.browserIE6 div.listing li,
+.browserIE6 ul.tabs,
+.browserIE6 h6,
+.browserIE6 .peripheralcontent ul,
+.browserIE6 .peripheralcontent cite,
+.browserIE6 .peripheralcontent .contactCard h2,
+.browserIE6 .peripheralcontent div.youtube,
+.browserIE6 .peripheralcontent div.youtube div.qp_wrapper,
+.browserIE6 .article_heading
+{
+	zoom:1;
+}
+
+.browserIE6 #container {
+  height: 860px;
+}
+
+.browserIE6 ul.tabs li {
+  width: 100px;
+}
+.browserIE6 ul.tabs li a {
+  height: 41px;
+  font-size: 0.9em;
+}
+
+.browserIE6 #ls-row-1 div,
+.browserIE6 #ls-row-4 div {
+  background-color: #ccc;
+}
+
+.browserIE6 #nav li.home{
+	border-bottom-width: 3px;
+}
+
+.browserIE6 .peripheralcontent div.image_browse_description {
+  clear: both;
+}
+
+.browserIE6 .qp_wrapper {
+  overflow: visible;
+}
+
+.browserIE6 table.webform {
+  margin-top: 20px;
+}
+
+.browserIE6 textarea, .browserIE6 input.required, .browserIE6 input.validation_none {
+  width: 98% !important;
+}
+
+.browserIE6 #homeHead h2 {
+  margin-top: 3px;
+}
+
+.browserIE6 div.article_heading div.testimonialDetails,
+.browserIE6 div.article_heading div.intro {
+  background-color: #F9F9F8 !important;
+}
+
+.browserIE6 div.image div.moreContainer {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /*AARRGGBB*/
+}
+
+.browserIE6 div.col1,div.col2,div.col3 {
+
+	margin-right: 0px;
+}
+
+.browserIE6 div.highlightBox {
+ _height: 270px;
+}

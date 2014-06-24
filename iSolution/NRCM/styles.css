@@ -1,0 +1,973 @@
+/* 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+CSS Document
+Project Title : ESRC National Centre for Research Methods Stylesheet
+Author : Atelier Studios
+URL : http://wwww.atelier-studios.com
+Description : Design and layout for ESRC National Centre for Research Methods
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*Stop background flicker in IE 6 Bug: http://evil.che.lu/2006/9/25/no-more-ie6-background-flicker
+
+
+html {  
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}*/ 
+
+
+body {
+		background-color:#ffffff;
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		line-height:16px;
+		margin-bottom:20px;
+		margin-top:-12px;
+		/* behavior: url("/incoming/furniture/css/csshover3.htc"); */
+}
+
+/* 
+Reset all browser defaults */
+* { 
+		margin:0;
+		/* padding:1; */
+}
+
+	
+/* 
+Make for consistent list handling across different browsers. http://www.clagnut.com/blog/1287/
+NEVER alter these values. Set margin & padding to 0 (or whatever you need) directly on subsequent lists. */
+ul {
+    	padding-left:1em;
+    	margin-left: 7px;
+		font-size:12px;
+		color:#000;
+}
+
+ol {
+    	padding-left:1em;
+    	margin-left: 10px;
+		font-size:12px;
+		color:#000;
+}
+
+
+/* 
+No boders on images */
+img {
+		/*border:0;*/
+}
+
+/* Styling HRs across browsers so hide the HR in a div to style */
+.siteHR {
+		height:1px;
+		margin: 5px 0px 5px 0px;
+		width:100%;
+		border-top: 1px solid #b9bdc1;
+		background: none;
+		
+	}	
+	.siteHR hr{
+		display:none;
+}
+/* 
+TYPOGRAPHY
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+h1{
+		color:#1c4f7c;
+		font-size:18px;
+		font-weight:400;
+		margin-bottom:10px;
+		line-height:24px;
+}
+
+h2 {
+		color:#000000;
+		font-size:15px;
+		margin-bottom:5px;
+}
+
+h3 {
+		color:#000000;
+		font-size:12px;
+		font-weight:bold;
+		margin-bottom:5px;
+}
+
+h5 {
+		font-size:15px;
+        color:#000;
+        font-weight:600;
+		margin-bottom:5px;
+}
+
+h1, h1 a, h1 a:visited, h1 a:link {
+	text-decoration: none;
+	color: #1c4f7c;
+	font-size:18px;
+	font-weight:400;
+	}
+
+h2 a, h2 a:visited, h2 a:link{
+	color: #1c4f7c; 
+	font-size:15px;
+	
+
+	}
+	
+h3, h3 a, h3 a:visited {
+	color: #000000;
+	font-size:12px;
+	font-weight:bold;
+	}	
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	text-decoration: none;	
+	color: #2a93ef !important;
+	}
+	
+h1 a:hover {
+	font-size:18px;
+}
+
+h2 a:hover {
+	text-decoration: none;	
+	color: #2a93ef !important;
+	font-size:15px;
+	font-weight:bold;
+	}
+	
+h3 a:hover {
+	text-decoration: none;	
+	color: #2a93ef !important;
+	font-size:12px;
+	font-weight:bold;
+	}
+
+
+h4, h4 a, h4 a:visited, h6, h6 a, h6 a:visited {
+	color:#3d9ab4;
+	font-size:16px;
+	margin:8px 0;
+	}
+h4 a:hover, h6 a:hover {
+	text-decoration: none;	
+	color: #1c4f7c !important;
+	}
+	
+
+
+p {
+		font-size:12px;
+		color:#000;
+		margin-bottom:10px;
+}
+
+tr td {
+		font-size:12px;
+		color:#000;
+}
+
+
+
+/* 
+Links: Always implement all four states through-out this stylesheet */
+a:link {color:#1c4f7c; text-decoration:none; font-size:12px; font-weight:bold}
+a:visited {color:#1c4f7c; text-decoration:none; font-size:12px; font-weight:bold}
+a:hover {color:#2a93ef; text-decoration:underline; font-size:12px; font-weight:bold}
+a:active {color:#1c4f7c; text-decoration:none; font-size:12px; font-weight:bold}
+
+/* 
+END TYPOGRAPHY
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+CLASSES
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*
+.large-navy-title {
+		font-size:18px;
+		color:#0b2b47 !important;
+		font-weight:normal;
+		border-bottom: 1px dotted #0b2b47;
+		padding-bottom:10px;
+}
+
+.medium-blue-title {
+		font-size:13px;
+		border-bottom: 1px dotted #0b2b47;
+		padding-bottom:10px;
+}
+
+*/
+.highlight {
+		color:#2a93ef !important;
+}
+
+.buttons {
+	float: left;
+	margin-bottom:8px;
+}
+
+.buttons img {
+	border:0px;
+}
+
+.buttons tr td {
+	padding:6px;
+}
+
+
+
+
+/* 
+END CLASSES
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+LAYOUT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+div#wrapper {
+		width:980px;
+		text-align:left;
+		margin: 0 auto;
+		position:relative;
+}
+
+div#header {
+		background-color:#ffffff;
+		padding: 18px 10px 12px 12px;
+		height:100%;
+		}
+		div#header h1, div#header h2{
+		margin:0px 0px 10px 0px;
+		font-style:italic;
+		font-weight:bold;
+	
+		font-size:17px;
+		
+		}
+
+div#page-title {
+		background-color:#ffffff;
+		font-size:12px;
+		color:#1c4f7c;
+		font-weight:bold;
+		margin-left:14px;
+		margin-top:-10px;
+		margin-bottom:-5px;
+		line-height:24px;
+		}
+		div#page-title h1{
+		color:white !important;
+		font-size:16px;
+		margin:3px 0;
+		}
+		div#page-title p{
+		float:left;
+		color:#1c4f7c !important;
+		
+		}
+		#page-title a:link {color:#1c4f7c; text-decoration:none;}
+		#page-title a:visited {color:#1c4f7c; text-decoration:none;}
+		#page-title a:hover {color:#2a93ef; text-decoration:none;}
+		#page-title a:active {color:#1c4f7c; text-decoration:none;}
+
+div#content {
+		background-color:#FFFFFF;
+		padding:10px;
+		clear:both;
+		float:left;
+		}
+
+.bannerRMF {
+		margin-bottom:10px;
+		border:1px solid #778999;
+		}
+
+.banner {
+		margin-bottom:5px;
+		margin-right: 10px;
+		border:1px solid #778999;
+		width:350px;
+		height:150px;
+		}
+		
+.banner2 {
+		margin-bottom:5px;
+		margin-right: 10px;
+		border:1px solid #778999;
+		width:150px;
+		height:100px;
+		}
+
+#logo {
+		width:303px;
+		height:37px;
+		background-image:url(../images/sitewide/NCRM_new_Logo.gif);
+		overflow:hidden; display:block;
+		margin-top:47px;
+		margin-bottom:37px;
+		
+		
+}
+
+#NCRMlogo {
+		width:303px;
+		height:37px;
+		overflow:hidden; display:block;
+		margin-top:47px;
+		margin-bottom:37px;
+		border:0;
+		outline:0;
+		
+		
+}
+
+#logo-esrc-council {
+		width:72px;
+		height:60px;
+		margin-top:10px;
+		margin-bottom:20px;
+		margin-left:8px;
+		margin-right:8px;
+		background-image:url(../images/sitewide/logo-esrc-council.gif);
+		overflow:hidden; display:block;
+		outline:0;
+}
+
+#ESRClogo {
+		width:72px;
+		height:60px;
+		margin-bottom:10px;
+		margin-left:8px;
+		margin-right:8px;
+		overflow:hidden; display:block;
+		outline:0;
+		border:0;
+}
+
+#icons {
+    margin-left:5px;
+	outline:0;
+	border:0;
+}
+
+
+
+#icons img {
+	margin-bottom:-13px;
+	outline:0;
+	border:0;
+}
+
+#imagesBorder {
+	outline:0;
+	border:0;
+}
+
+#skip-link {
+		display:none;
+}
+
+
+#main-column {
+		width:700px;
+		float:left;
+}
+
+.st_sharethis_hcount {
+		margin-right: 40px;
+}
+
+#generic-sidebar {
+		margin-left:3px;
+		width:230px;
+		float:left
+
+		}
+		
+#generic-column {
+		width:670px;
+		margin-left:255px;
+		min-height:250px;	
+		
+}
+#sidebar {
+		float:right;
+		width:255px;
+		margin-right:-5px;
+		
+		}
+		#sidebar p {
+		margin-bottom:9px;
+		}
+		
+		#sidebarMenu {
+		 border-left: 1px solid #b9bdc1; 
+		 padding-left:10px;
+		
+		}
+
+		
+				
+
+/* Homepage Columns*/
+.column1, .column2 {
+		width:300px;
+		float:left;
+		margin-top:5px;
+}
+
+.column1 td, .column2 td  {
+		padding-bottom:7px;
+
+
+}
+
+.column1 {
+		margin-right:70px;
+}
+
+.column-image {
+		border-top: 1px dotted #0b2b47;
+		border-bottom: 1px dotted #0b2b47;
+		padding: 5px 0;
+		margin-bottom:10px;
+}
+
+.column-list {
+		font-size:11px;
+		margin:0 0 0 15px;
+		padding:0;
+		line-height:14px;
+		list-style-type:square;
+		}
+		.column-list li {
+		margin-bottom:7px;
+		}
+
+/* Internal Page */
+#internal-content {
+		border-top:2px solid #0b2b47;
+		font-size:11px;
+		}
+		#internal-content p{
+		margin-bottom:10px;
+		}
+		#internal-content ul, #sidebar ul{
+		font-size:11px;
+		margin:0 0 0 17px;
+		padding:0;
+		line-height:14px;
+		list-style-type:square;
+		color:#000000;
+		}
+		#internal-content ol, #sidebar ol{
+		font-size:11px;
+		margin:0 0 0 24px;
+		padding:0;
+		line-height:14px;
+		color:#000000;
+		}
+		#internal-content li, #sidebar li { 
+		margin-bottom:7px;
+		}
+
+#footer {
+		color:#595959;
+		margin-top:5px;
+
+		}
+		#footer p{
+		color:#595959;
+		}
+		#footer a:link {color:#595959; text-decoration:none; font-weight:400;}
+		#footer a:visited {color:#595959; text-decoration:none; font-weight:400;}
+		#footer a:hover {color:#595959; text-decoration:underline; font-weight:400;}
+		#footer a:active {color:#595959; text-decoration:none; font-weight:400;}
+		
+
+/* 
+END LAYOUT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+IMAGES
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:5px;
+	border: 1px solid #d4d4d4;
+	clear:both;
+	}
+	
+img.alignright {
+	margin: 10px 20px 10px 30px;
+	display: inline;
+	padding:5px;
+	border: 1px solid #d4d4d4;
+	clear:right;
+	}
+
+img.alignleft {
+	margin: 10px 30px 10px 20px;
+	display: inline;
+	padding:5px;
+	border: 1px solid #d4d4d4;
+	clear:left
+	}
+
+.alignright {
+	float: right;
+	}
+	
+.alignleft {
+	float:left;
+	}
+/* 
+END IMAGES
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+FORM LAYOUT
+When creating a form add .formField to any fields, .formLabel to labels 
+and proceed labels with a <br class="formBR" />
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+fieldset {
+	border: none;
+}
+
+fieldset legend {
+	padding: 10px 0 10px 0 !important;
+	font-size:14px;
+	font-weight:bold;
+}
+
+form, label input {
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+}
+
+input:focus, textarea:focus, label:focus {
+	background: #fff;
+	border: 1px solid #686868;
+}
+
+label.formLabel, input.formField {
+		display: block;
+		width: 150px;
+		float: left;
+		margin-bottom: 5px;
+		color:#555;
+}
+
+label.formLabel {
+		text-align: left;
+		float:left;
+		width: 130px;
+		display: block;
+}
+
+.formField {
+		border:1px solid #bccdf0;
+		padding:2px;
+		color:#b3b2b2;
+}
+
+br.formBR {
+		clear: left;
+}
+
+
+
+/* 
+END FORM LAYOUT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* 
+HEADINGS
+Refer to site-map for all headers. Ensure consitent casing.
+NOTE: Heading naming convention - #heading_human_name_title
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* 
+END HEADINGS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* DROPDOWN MENU */
+
+.firstlevel {
+	display:block;
+	padding:5px 25px 0px 25px;
+	border-left:1px solid #FFFFFF;
+}
+	
+	
+.suckertreemenu ul{
+margin:0px;
+padding: 0px;
+list-style-type: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Top level list items*/
+.suckertreemenu ul li{
+position: relative;
+display: block;
+z-index: 25;
+background-color: #1C4F7C;
+float:left;
+}
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a{
+display: inline;
+padding: 1px 25px 1px 25px ;
+border: 1px solid #1C4F7C;
+border-left-width: 0;
+border-left: 1px solid #DADADA;
+
+text-decoration: none;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+
+line-height:24px;
+}	
+
+.suckertreemenu ul li a:hover{
+/* background-color: #2a93ef; */
+text-decoration:underline;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+line-height:24px;
+}
+
+.suckertreemenu ul li a:visited {
+/* text-decoration:none; */
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+line-height:24px;
+margin:0;
+
+}
+
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+/* End */
+#treemenu1 {color:white;
+
+}
+
+#lastli {
+line-height:24px;
+width:70px;
+}
+
+#firstli {
+border-left:0px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold;
+
+line-height:24px;
+}
+
+#frontPageLink {
+	font-weight:400;
+
+}
+
+
+/* Lisha Start - replace menu css */
+
+div.menu > ul, div.menu > ul > li > ul.active {
+    list-style: none outside none;
+    margin-left: 0; 
+}
+
+div.menu > ul{
+    height: 24px;
+    background-color: #1C4F7C;    
+}
+
+div.menu > ul > li > ul {
+	display: none;
+}
+
+div.menu > ul > li > ul.active {
+	left: 0;
+    position: absolute;
+    display: block;
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #CCCCCC;
+	margin: 0 12px;
+    padding: 0; 
+	width: 97.8%;	
+}
+
+div.menu li{
+    float: left;
+}
+
+div.menu li a { 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+}
+div.menu > ul > li > a {
+    color: #FFFFFF;
+    padding: 0px 24px;
+    font-size: 16px;
+}
+
+div.menu li a.active{
+    background-color: #2A93EF;   
+	color: #FFFFFF;	
+}
+
+div.menu li a:hover{
+	color: #2A93EF;	
+}
+
+div.menu li a.active:hover{
+	color: #1C4F7C;	
+}
+
+
+
+
+div.menu > ul > li > ul > li > a{
+
+    padding: 0 10px;
+	font-size: 13px;
+
+}
+
+
+
+
+/* Lisha End */
+
+
+/*Training Event Form*/
+.redstar{
+	color: #ff0000;
+}
+
+.question{
+	padding: 10px;
+	clear: left;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	width: 550px;
+	border: 1px solid #eee;
+	
+	
+}
+.question input, .question select, .question textarea{
+	border: 1px solid black;
+	background-color: #eee;
+	width: 400px;
+}
+
+.question .disabled{
+	border: 1px solid #ddd;
+	background-color: #f5f5f5;
+	width: 400px;
+}
+
+.question .disabledtext{
+	color: #ddd;
+}
+
+.question-request{
+	background-color: #f9f9f9;
+	padding: 0px 10px 5px 3px;
+	width: 120px;
+}
+
+.question-request, .question-response{
+float: left;
+	
+}
+
+.labeltext{
+	font-weight: bold;
+}
+
+
+
+.option{
+	border: 1px solid black;
+}
+
+.region .textarea{
+	border: 1px solid black;
+}
+
+.submit input{
+	border: 1px solid black;
+	background-color: #ddd;
+	margin-top: 20px;
+	
+}
+
+.adddelete{
+		margin: 5px;
+		border: 1px solid black;
+		background-color: #ddd;
+}
+
+#tandeNav {
+	border-style: none;
+	margin-left:8px;
+	margin-right:8px;	
+}
+
+/*Search box*/
+#searchbox{
+	padding: 4px;
+
+	float: left;
+	margin-right:60px;
+
+}
+
+#search-title-texts{
+	float: left;
+}
+
+#search-input{
+	float: left;
+	
+}
+
+
+#search-inputs .search-input{
+	padding-bottom: 6px;
+}
+
+#search-inputs{
+	width: 400px;
+}
+
+.search-title-text{
+	width: 124px;
+	padding-bottom: 16px;
+}
+
+#search-to{
+	padding-left: 9px;
+	padding-right: 8px;
+}
+
+.search-input .daterange{
+	width: 70px;
+}
+
+.search-input #submit{
+
+	margin-left: 13px;
+}
+
+.searchcheckbox{
+	float: left;
+	width: 100px;
+}
+/*Advanced search */
+#searchboxadvanced{
+	padding: 4px;
+	height: 600px;
+	float: left;
+	width: 670px;
+}
+
+#searchstring{
+	width: 300px;
+}
+
+#searchfor input{
+	margin-left: 20px;
+	
+}
+#searchforoptions{
+	margin-left: 60px;
+	margin-top: 5px;
+}
+
+#searchselecttext{
+	float: right;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	padding: 2px 7px 2px 7px;
+	width: 350px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#searchboxadvanced fieldset{
+	border: 1px solid black;
+	padding: 0px 20px 10px 20px;
+}
+
+#searchboxadvanced legend{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#searchadditional{
+	clear: both;
+	width: 600px;
+	height: 25px;
+}
+
+#searchadditionaltitle{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	margin-right: 20px;
+}
+
+#searchadditionalinput{
+	width: 300px;
+	float: left;
+}
+
+#searchadditionalinput label{
+	margin-right: 8px;
+	
+}
+
+.ep_citations_item li {
+margin-bottom:5px;
+}
+

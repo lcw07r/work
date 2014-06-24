@@ -1,0 +1,154 @@
+/**
+* Colour specific settings
+*
+# This file is to contain ONLY the overrides needed to changing the colour of the site,
+* so no colours, sizes, fonts or spacings styles
+*
+* This will mainly be used for the background colours, foreground colours and coloured image backgrounds
+*
+*
+*/
+#header {
+	border-color: #E62D12;
+}
+
+a:link,a:visited,
+div.tags ul li,h2,h3,h4,
+div.intro p,
+div p.intro,
+blockquote p,
+p.lead,
+table th,
+dl.staff dt,
+p em,
+#content h4,
+#content h5, 
+#content h6,
+ul#breadcrumb li a,
+div.peripheralcontent h3,
+#container table tr td a,
+div .card a,
+.ep_citations_item a,
+div.featured h3,
+div.listing h3,
+#webform fieldset legend,
+.serif,
+div.contactCard h4
+{
+	color: #C90002;
+}
+
+/*
+ Main Left Navigation
+*********************************************************/
+#nav li a {
+	color: #FFF;
+}
+
+#nav li#searchBox, #nav li.home a, #nav li.sotonhome a, input.button {
+	background-color: #E62D12;
+}
+
+#nav li.home a:hover, #nav li a:hover, #nav li.active a, #nav li.inactive a:hover, #nav li.sotonhome a:hover {
+	background-color: #C90002;
+}
+
+#nav li#searchBox button.submit {
+	background-image: url(../../images/cb3/nav_orange_search.gif);
+}
+
+#nav li#searchBox input.text, #nav li.pages, #nav li.home  {
+	border-color: #F3A996;
+}
+
+#nav li.home a {
+	background-image: url(../../images/cb3/nav_orange_home.gif);
+}
+
+#nav li.home a:hover {
+	background-image: url(../../images/cb3/nav_orange_home_over.gif);
+}
+
+#nav li li.inactive a {
+	/* inactive items and inactive items under active items */
+	background-color: #E6522C;
+}
+
+#nav ul ul,#nav li li,#nav li li.active a,#nav li li.active li {
+	/* border for all items in the nav */
+	border-color: #F3A996 !important;
+}
+
+/* University Home Top level Item */
+#nav li.sotonhome a {
+	background-image: url(../../images/cb3/nav_orange_back.gif);
+}
+
+#nav li.sotonhome a:hover {
+	background-image: url(../../images/cb3/nav_orange_back_over.gif);
+}
+
+/* page list styles */
+.pageList ul li, div.featured ul li,#content div.card div.row ul.facts li,.peripheralcontent ul li, div.card div.peripheralcontent ul li,.peripheralcontent div.newsfeed h3,.peripheralcontent h3.flickr   {
+  background-color: #FCE7E2;
+}
+
+/* tab navigation */
+div#content ul.tabs li.active a {
+	background: #FFF url(../../images/cb3/bg_tabs_orange.gif) repeat-x;
+}
+
+div.peripheralcontent div.feature div.feature-bg {
+  background: #FFF url(../../images/cb3/bg_highlightBox_orange.png) no-repeat 0 0;
+}
+
+/* profile styles */
+.testimonialDetails dl dt, .profileDetails dl dt {
+  color: #E62D12;
+}
+
+div.highlightBox {
+  background-image: url(../../images/cb3/bg_highlightBox_orange.png);
+
+}
+
+span.listing 
+{
+    color: #C90002;
+}
+
+.kisinfo {
+     background: url("../../images/kis/nav_up_orange.png") no-repeat;
+	 padding: 0px 25px;
+	 color: #C90002;
+
+}
+
+div.card div.row ul.facts li {
+  background-color: #FCE7E2;
+}
+
+.menu-icon {
+background-color: #FCE7E2;
+}
+
+.flex-control-nav li a {
+background: url(../../images/slider/bg_nav_orange.png) no-repeat; 
+}
+
+.usefuldownloads {
+background-color: #FCE7E2; /* The color of menu button */
+}
+.readers > li {
+background-color: #FCE7E2 !important;
+}
+
+a.adjust {
+
+background-color: #FCE7E2;
+}
+
+a.adjust:hover {
+
+background-color: #C90002;
+}
